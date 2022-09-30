@@ -1,0 +1,134 @@
+:root {
+  --white: #fff;
+  --dark-white: #fffcf8;
+  --black: #000;
+  --very-dark-blue: #052c3b;
+  --dark-blue: #24303e;
+  --blue: #3ebfff;
+  --light-blue: #19536c;
+  --very-light-blue: #77cdf5;
+  --yellow: #fbd600;
+  --light-yellow: #fad400;
+  --dark-gray: #5b636d;
+  --gray: #808397;
+  --light-gray: #a7aaad;
+  --very-dark-green: #24554a;
+  --dark-green: #2c7566;
+  --green: #458d7e;
+  --light-green: #90d4c6;
+  --light-red: #fe7766;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: Roboto-Bold;
+  font-style: normal;
+  src: url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-weight: 500;
+  font-family: Roboto-Medium;
+  font-style: normal;
+  src: url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-weight: 500;
+  font-family: Roboto-Regular;
+  font-style: normal;
+  src: url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-weight: 700;
+  font-family: HeliosCond-Bold;
+  font-style: normal;
+  src: url("../fonts/HeliosCond-Bold.woff") format("woff"), url("../fonts/HeliosCond-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+body {
+  color: var(--gray);
+  font-weight: 400;
+  font-size: 1.8rem;
+  font-family: "Roboto-Regular", sans-serif;
+  font-style: normal;
+  line-height: 1.3;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

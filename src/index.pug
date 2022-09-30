@@ -1,0 +1,18 @@
+doctype html
+html(lang="ru-RU")
+    head
+        meta(charset="utf-8")
+        title Template
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        meta(name="keywords" content="")
+        link(rel="stylesheet" type='text/css' href="./styles/style.css")
+    body
+        block content
+            .wrap
+                include components/header/header
+                include components/main/main
+                include components/footer/footer
+        block script
+            script(src='./js/script.js')
+
