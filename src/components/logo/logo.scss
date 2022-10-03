@@ -1,0 +1,31 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__img {
+    background: var(--yellow);
+    padding: 10px 60px;
+    margin-bottom: 10px;
+    svg {
+      width: 100%;
+      max-width: 30px;
+      fill: var(--dark);
+      @include respond-to(md) {
+        max-width: 100px;
+      }
+    }
+  }
+  &__text {
+    font-family: 'HeliosCond-Bold', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    max-width:150px;
+    text-align: center;
+    @include respond-to(lg) {
+      max-width: 300px;
+    }
+  }
+
+
+}

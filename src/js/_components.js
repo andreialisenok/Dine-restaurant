@@ -1,1 +1,5 @@
 import '../components/header/header'
+import '../components/main/main'
+import '../components/footer/footer'
+import '../components/logo/logo'
+import '../components/burger/burger'

@@ -1,5 +1,5 @@
 body {
-  color: var(--gray);
+  color: var(--dark);
   font-weight: $font-weight;
   font-size: $text-size;
   font-family: $font-family;
@@ -7,6 +7,6 @@ body {
   line-height: $line-height;
 }
 a {
-  color: var(--white);
+  color: var(--dark);
   text-decoration: none;
 }

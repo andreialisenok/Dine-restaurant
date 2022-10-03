@@ -28,7 +28,7 @@ img {
   height: 100%;
 }
 .container {
-  max-width: 1200px;
+  max-width: $max-width;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;

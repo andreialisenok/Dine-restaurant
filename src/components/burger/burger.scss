@@ -1,0 +1,59 @@
+.burger {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  cursor: pointer;
+  overflow: hidden;
+  align-items: center;
+  justify-items: flex-end;
+  position: absolute;
+  z-index: 200;
+  top: 20px;
+  right: 20px;
+  @include respond-to(xl) {
+    display: none;
+  }
+
+  &:hover span:nth-child(1) {
+    width: 20px;
+  }
+
+  &:hover span:nth-child(2) {
+    width: 30px;
+  }
+
+  span {
+    display: block;
+    background: var(--dark);
+    width: 40px;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+
+    &:nth-child(1) {
+      width: 30px;
+    }
+
+    &:nth-child(2) {
+      width: 20px;
+    }
+
+    &:nth-child(3) {
+      bottom: 0;
+    }
+  }
+}
+
+.burger.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-20%, 500%);
+  width: 40px;
+  background: var(--yellow);
+}
+
+.burger.active span:nth-child(2) {
+  transform: translateX(40px);
+}
+
+.burger.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-20%, -500%);
+  background: var(--yellow);
+}
